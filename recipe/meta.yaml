@@ -53,7 +53,7 @@ test:
 
 about:
   home: https://www.r-project.org, http://minepy.readthedocs.io/en/latest, http://www.exploredata.net
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Wrapper for 'minepy' implementation of Maximal Information-based Nonparametric Exploration
     statistics (MIC and MINE family). Detailed information of the ANSI C implementation
     of 'minepy' can be found at <http://minepy.readthedocs.io/en/latest>.

@@ -3,7 +3,7 @@ About r-minerva
 
 Home: https://www.r-project.org, http://minepy.readthedocs.io/en/latest, http://www.exploredata.net
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-minerva-feedstock/blob/master/LICENSE.txt)
 

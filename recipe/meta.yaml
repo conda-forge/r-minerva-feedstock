@@ -1,4 +1,4 @@
-{% set version = '1.5.8' %}
+{% set version = "1.5.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/minerva_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/minerva/minerva_{{ version }}.tar.gz
-  sha256: 3069274f64de91475f6ee815b91f7a82b0dcd3c0bea5d9199b5667ecf0e09c4c
+  sha256: 2f26353d8fcc989ac698c4e45bb683801b1a7bb60b14903d05a4d73c629c590f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,11 +54,9 @@ test:
 about:
   home: https://www.r-project.org, http://minepy.readthedocs.io/en/latest, http://www.exploredata.net
   license: GPL-3.0-only
-  summary: Wrapper for 'minepy' implementation of Maximal Information-based Nonparametric Exploration
-    statistics (MIC and MINE family). Detailed information of the ANSI C implementation
-    of 'minepy' can be found at <http://minepy.readthedocs.io/en/latest>.
+  summary: Wrapper for 'minepy' implementation of Maximal Information-based Nonparametric Exploration statistics (MIC and MINE family). Detailed information of the ANSI C implementation of 'minepy' can be found at <http://minepy.readthedocs.io/en/latest>.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
